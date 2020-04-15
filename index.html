@@ -3,21 +3,208 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
   </head>
 
   <body>
+    <style>
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Globals */
+.container {
+    width: 80%;
+    margin:auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.button1 {
+  padding: 8px;
+  background-color:#4285F4;
+  color: white;
+  border: none;  
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Header */
+header{
+    background-color: brown;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header #header-img img {
+    width: 150px;
+}
+header nav {
+    margin-top: 10px;
+}
+
+header li {
+    display: inline;
+    padding: 10px;
+}
+
+
+
+header li a:hover {
+    font-weight:bold;
+    color: #e9e9e9;
+}
+
+header li.current a {
+    color: red;
+}
+
+/* Showcase */
+#showcase {
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: url("./img/showcase.jpg") no-repeat 0 -400px;
+    color: white;
+}
+#showcase h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#showcase p {
+    font-size: 20px;
+}
+
+/* Subscribe */
+#subscribe .container {
+    background-color: brown;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#subscribe input[type="email"] {
+    height: 30px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+/* boxes */
+
+#boxes {
+    margin: 60px 0;
+
+}
+#boxes .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#boxes .box {
+    padding: 20px;
+}
+
+/* link */
+#link {
+    margin: 150px 0;
+}
+#link .container {
+    display: flex;
+    justify-content: center;
+}
+
+/* prices */
+
+#prices {
+    margin: 150px 0;
+}
+
+#prices .container {
+    display: flex;
+    justify-content: space-around;
+}
+#prices .price {
+    padding: 20px;
+    border: 1px solid brown;
+    min-width: 250px;
+}
+
+#prices .price h3 {
+    background-color: brown;
+    color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#prices button {
+    width: 96%;
+    margin: 10px 1% 0px 1%;
+}
+
+/* footer */
+footer {
+    background-color: brown;
+    text-align: center;
+    padding: 30px;
+    margin-top: 150px;
+    color: #ffffff;
+}
+
+footer li {
+    display: inline;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #header .container,
+    #boxes .container,
+    #subscribe .container,
+    #prices .container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #prices .price {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+}
+
+    </style>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header id="header">     
       <div class="container">
-        <div id="header-img">
-          <img src="./img/microverse_logo.png" alt="Microverse logo">
+        <div>
+          <img id="header-img" src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30adbb408180632f50a480_horizontal-logo-white-p-500.png" alt="Microverse logo">
         </div>
         <nav id="nav-bar">
           <ul>
-            <li class="nav-link current"><a href="home.html">Home</a></li>
-            <li class="nav-link"><a href="about.html">About</a></li>
-            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="current"><a class="nav-link" href="#video">Video</a></li>
+            <li><a class="nav-link" href="#prices">Prices</a></li>
+            <li><a class="nav-link" href="#boxes">Boxes</a></li>
           </ul>
         </nav>
       </div>
@@ -32,9 +219,10 @@
 
     <section id="subscribe">
       <div class="container">
-        <form action="https://www.freecodecamp.com/email-submit"  id="form"></form>
+        <form action="https://www.freecodecamp.com/email-submit"  id="form">
         <input type="email" name="email" id="email" placeholder="Enter your email address">
         <input type="submit" value="Subscribe" id="submit" class="button1">
+        </form>
       </div>
     </section>
 
