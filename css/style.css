@@ -23,6 +23,12 @@ ul {
   border: none;  
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
 /* Header */
 header{
     background-color: brown;
@@ -48,11 +54,7 @@ header li {
     padding: 10px;
 }
 
-header li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-}
+
 
 header li a:hover {
     font-weight:bold;
@@ -90,17 +92,16 @@ header li.current a {
     width: 100%;
 }
 
-#subscribe input {
+#subscribe input[type="email"] {
     height: 30px;
     padding: 0 5px;
     margin-right: 10px;
-    width: 300px;
 }
 
 /* boxes */
 
 #boxes {
-    margin: 30px 0;
+    margin: 60px 0;
 
 }
 #boxes .container {
@@ -112,11 +113,72 @@ header li.current a {
     padding: 20px;
 }
 
-/* video */
-
-#video .container {
+/* link */
+#link {
+    margin: 150px 0;
+}
+#link .container {
     display: flex;
     justify-content: center;
 }
 
+/* prices */
 
+#prices {
+    margin: 150px 0;
+}
+
+#prices .container {
+    display: flex;
+    justify-content: space-around;
+}
+#prices .price {
+    padding: 20px;
+    border: 1px solid brown;
+    min-width: 250px;
+}
+
+#prices .price h3 {
+    background-color: brown;
+    color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#prices button {
+    width: 96%;
+    margin: 10px 1% 0px 1%;
+}
+
+/* footer */
+footer {
+    background-color: brown;
+    text-align: center;
+    padding: 30px;
+    margin-top: 150px;
+    color: #ffffff;
+}
+
+footer li {
+    display: inline;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #header .container,
+    #boxes .container,
+    #subscribe .container,
+    #prices .container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #prices .price {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+}
