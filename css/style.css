@@ -7,7 +7,7 @@ body {
 /* Globals */
 .container {
     width: 80%;
-    margin:auto;
+    margin: auto;
 }
 
 ul {
@@ -72,7 +72,7 @@ header li.current a {
     display: flex;
     justify-content: center;
     text-align: center;
-    background: url("../img/showcase.jpg") no-repeat 0 -400px;
+    background: url("./img/showcase.jpg") no-repeat 0 -400px;
     color: white;
 }
 #showcase h1 {
@@ -84,12 +84,13 @@ header li.current a {
 }
 
 /* Subscribe */
+#subscribe {
+  background-color: brown;
+}
 #subscribe .container {
-    background-color: brown;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  padding: 20px;git pu
+  display: flex;
+  justify-content: center;
 }
 
 #subscribe input[type="email"] {
