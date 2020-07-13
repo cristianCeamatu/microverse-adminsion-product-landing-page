@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://cristianceamatu.github.io/microverse-admision-tribute-page/)
+[Live Demo Link](https://cristianceamatu.github.io/microverse-adminsion-product-landing-page/)
 
 
 To get a local copy up and running follow these simple example steps.
